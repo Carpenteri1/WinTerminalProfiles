@@ -12,7 +12,8 @@ Placed under %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\Loc
 * Press Ctrl+Shift+P to open the Settings menu.
 * In the search bar, type quake to find the Quake mode settings.
 * Set keys u want to use to open the terminal
-```   {
+```
+        {
             "command": 
             {
                 "action": "quakeMode",
