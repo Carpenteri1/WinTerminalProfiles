@@ -2,17 +2,28 @@
 These are my user-specific configuration files that I use to personalize my Windows experience.
 
 ### Starship
-Placed under C:\ Users \ UserName \ .config
+- Go to https://starship.rs/guide/
+- Get with winget
+  ```
+  winget install --id Starship.Starship
+  ```
+- After install open terminal and type to setup config file:
+  ```
+  starship config
+  ```
+- Copy paste the theme from repo or create own theme
 
 ### Windows-Terminal-Settings
-Placed under %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
-
+- Placed under: 
+  ```
+  %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
+  ```
 ### Launch in QuakeMode
-* Open Windows Terminal and json settings file,
-* Press Ctrl+Shift+P to open the Settings menu.
-* In the search bar, type quake to find the Quake mode settings.
-* Set keys u want to use to open the terminal
-```
+- Open Windows Terminal and json settings file,
+- Press ``` Ctrl+Shift+P ``` to open the Settings menu.
+- In the search bar, type quake to find the Quake mode settings.
+- Set keys u want to use to open the terminal
+  ```
         {
             "command": 
             {
@@ -24,13 +35,18 @@ Placed under %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\Loc
             },
             "keys": "ctrl+win+ä"
         },
-```
+  ```
 ### Startup in QuakeMode
-* Type %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup in the search bar and press Enter.
-* Right-click in the folder and choose "New > Shortcut".
-* In the "Type the location of the item" field, enter the following command:
-* ``` wt ; new-tab -p "Windows PowerShell" -d "%USERPROFILE%" ```
-* This will open Windows Terminal in Quake mode, with a new tab open to the Windows PowerShell shell and the working directory set to your user profile directory.
-* Click "Next" and give the shortcut a name, such as "Windows Terminal (Quake mode)".
-* Click "Finish" to create the shortcut.
-* Now, every time boot in to windows, the Windows Terminal will launch automatically in Quake mode with the specified settings.
+- Type in the search bar and press Enter:
+  ```
+  %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup
+  ```
+- Right-click in the folder and choose "New > Shortcut".
+- In the "Type the location of the item" field, enter the following command:
+  ```
+  wt ; new-tab -p "Windows PowerShell" -d "%USERPROFILE%"
+  ```
+- This will open Windows Terminal in Quake mode, with a new tab open to the Windows PowerShell shell and the working directory set to your user profile directory.
+- Click "Next" and give the shortcut a name, such as "Windows Terminal (Quake mode)".
+- Click "Finish" to create the shortcut.
+- Now, every time boot in to windows, the Windows Terminal will launch automatically in Quake mode with the specified settings.
