@@ -8,10 +8,25 @@ These are my user-specific configuration files that I use to personalize my Wind
   winget install --id Starship.Starship
   ```
 - After install open terminal and type to setup config file:
+- Copy paste the theme from repo or create own theme
   ```
   starship config
   ```
-- Copy paste the theme from repo or create own theme
+- Now type with powershell open in windows terminal:
+  ```
+  $PROFILE
+  ```
+- This will locate the folder wwhere powershell settings is located.
+- Place this text at the bottom of the file:
+  ```
+  Invoke-Expression (&starship init powershell)
+  ```
+- If there is no file, create one and copy the text in the file.
+- File name example:
+  ```
+  Microsoft.PowerShell_profile.ps1
+  ```
+
 
 ### Windows-Terminal-Settings
 - Placed under: 
