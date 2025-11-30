@@ -28,8 +28,12 @@
             "keys": "alt+shift+right"
         },
         {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
+            "id": "Terminal.SplitPaneDown",
+            "keys": "alt+shift+down"
+        },
+        {
+            "id": "Terminal.ClosePane",
+            "keys": "alt+shift+x"
         }
     ],
     "newTabMenu": 
