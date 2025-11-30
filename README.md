@@ -29,7 +29,7 @@ These are my user-specific configuration files that I use to personalize my Wind
 
 
 ### Windows-Terminal-Settings
-- Placed under: 
+- Placed under repo under: 
   ```
   %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
   ```
